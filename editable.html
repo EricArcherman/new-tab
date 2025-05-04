@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.69" />
-    <title>pad</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-      }
-      
-      body {
-        font-family: Arial, sans-serif; /* Set the font family */
-        font-size: 16px; /* Set the font size */
-        margin: 0;
-        padding: 20px;
-        min-height: 100vh;
-        transition: background-color 0.3s, color 0.3s;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rich Text Pad</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
 
-      @media (prefers-color-scheme: light) {
-        body {
-          background-color: #ffffff;
-          color: #000000;
-        }
-      }
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background-color: canvas;
+      color: canvastext;
+    }
 
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #1a1a1a;
-          color: #ffffff;
-        }
-      }
-    </style>
-  </head>
-  <!-- The contenteditable="true" attribute on the body element is what makes the entire page editable -->
-  <body contenteditable="true">
-    <p></p>
-  </body>
+    #editor {
+      width: 95%;
+      height: 95vh;
+      padding: 10px;
+      background-color: inherit;
+      color: inherit;
+      line-height: 1.5;
+      outline: none;
+      text-align: left; /* Default alignment */
+      border: none; /* No borders */
+      box-shadow: none; /* Remove any shadow if there is any */
+    }
+  </style>
+</head>
+<body>
+  <!-- Content editable div -->
+  <div id="editor" contenteditable="true">...</div>
+</body>
 </html>
