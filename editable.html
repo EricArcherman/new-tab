@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.69" />
+    <title></title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      
+      body {
+        font-family: Arial, sans-serif; /* Set the font family */
+        font-size: 16px; /* Set the font size */
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: #ffffff;
+          color: #000000;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1a1a1a;
+          color: #ffffff;
+        }
+      }
+    </style>
+  </head>
+  <!-- The contenteditable="true" attribute on the body element is what makes the entire page editable -->
+  <body contenteditable="true">
+    <p></p>
+  </body>
+</html>
